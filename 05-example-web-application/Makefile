@@ -14,6 +14,12 @@ run-api-node:
 	@echo Starting node api
 	cd api-node && \
 		DATABASE_URL=${DATABASE_URL} \
+		npm run dev		cd D:\Projects\DockerCourse\devops-directive-docker-course\05-example-web-application\api-node
+		
+		npm install
+		
+		$env:DATABASE_URL="postgres://postgres:foobarbaz@localhost:5432/postgres"
+		
 		npm run dev
 
 .PHONY: run-api-golang
